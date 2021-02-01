@@ -10,14 +10,13 @@ public class MavenMultithreadApplication {
 
         MavenMultithreadApplication o = new MavenMultithreadApplication();
         //creating an object for class
-
-//
+//        thread.run();
         MyThread thread = o.new MyThread();
-//        Thread thread= new Thread(o.new MyThread()); // using while creating interface
+//       Thread thread= new Thread(o.new MyThread()); // using while creating interface
 //        thread.start();  //new thread will start executing and a new thread will be created along with a new callstack
         try {
-            thread.setDaemon(true); //daemon thread
 
+            thread.setDaemon(true); //daemon thread
             thread.start();
             thread.sleep(5000);
             System.out.println("Thread - 0 is running" + thread.isAlive());
@@ -47,7 +46,6 @@ public class MavenMultithreadApplication {
                 Thread.sleep(30000);
 
                 System.out.println("in thread after sleep " + currentThread().getName());
-
 
             } catch (InterruptedException e) {
 //                e.printStackTrace();
