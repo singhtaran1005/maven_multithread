@@ -18,9 +18,9 @@ public class CustomThread {
         MyThread thread4 = new MyThread(a2);
 
         thread1.start();
-        thread2.start();
-        thread3.start();
-        thread4.start();
+//        thread2.start();
+//        thread3.start();
+//        thread4.start();
     }
 
     private static class MyThread extends Thread {
