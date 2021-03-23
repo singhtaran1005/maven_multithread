@@ -5,7 +5,6 @@ public class Animal {
     private String type;
 
 
-
     public String getName() {
         return name;
     }
